@@ -28,3 +28,6 @@ dev = [
 
 [project.scripts]
 mailchimp-mcp = "mailchimp_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mailchimp_mcp"]

@@ -1,5 +1,7 @@
 # Mailchimp MCP Server
 
+<!-- mcp-name: io.github.asklokesh/mailchimp-mcp-server -->
+
 <div align="center">
 
 # Mailchimp Mcp Server

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.asklokesh/mailchimp-mcp-server",
+  "description": "MCP server for Mailchimp API integration",
+  "title": "Mailchimp",
+  "repository": {
+    "url": "https://github.com/asklokesh/mailchimp-mcp-server",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "mailchimp-mcp-server",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MAILCHIMP_API_KEY",
+          "description": "API Key for MAILCHIMP",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "MAILCHIMP_API_URL",
+          "description": "API URL for MAILCHIMP",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}
